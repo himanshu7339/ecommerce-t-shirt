@@ -28,6 +28,10 @@ app.use("/api/v1",product)
 app.use("/api/v1",shipping)
 app.use("/api/v1",payment)
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
 
 app.listen(port, () => {
   console.log(`Node js App http://localhost:${port}`);
